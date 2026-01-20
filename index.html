@@ -28,9 +28,9 @@
 
   <h2>Kalkulačka výdavkov na klienta</h2>
 
-  <input type="number" id="vydavok" placeholder="Zadaj celkovy vydavok">
+  <input type="number" id="vydavok" placeholder="Zadaj celkový výdavok">
 
-  <button onclick="calculate()">Calculate</button>
+  <button onclick="calculate()">Vypočítať</button>
 
   <div class="result" id="result"></div>
 
@@ -38,12 +38,13 @@
     function calculate() {
       const celkovy_vydavok = Number(document.getElementById("vydavok").value);
       const x = ((celkovy_vydavok * 21) / 408) / 12;
-      document.getElementById("result").innerText = "Result: " + x;
+      document.getElementById("result").innerText = "Výsledok: " + x;
     }
   </script>
 
 </body>
 </html>
+
 
 
 
